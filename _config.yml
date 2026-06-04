@@ -1,28 +1,18 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+
+title: 个人博客
+email: peiheyuan@agicmicro.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  本科就读于合肥工业大学计算机科学与技术专业，硕士就读于中国科学院大学人工智能专业，现为北京谦合益邦云信息技术有限公司的算法优化工程师。
+github_username: peiheyuan
 minimal_mistakes_skin: contrast
 search: true
+# logo: "/assets/images/bio-photo.jpg"
+enable_copy_code_button: true
 
 # Build settings
 markdown: kramdown
@@ -31,7 +21,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -60,26 +50,20 @@ plugins:
 author:
   name   : "Heyuan Pei"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "你看那通天的巨塔，每时每刻都有雪花落下。"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://peiheyuan.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/peiheyuan"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/peiheyuan"
 
 defaults:
   # _posts
@@ -90,9 +74,11 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      words_per_minute: 200
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -107,3 +93,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+header:
+  teaser: /assets/images/bio-photo.jpg  # for example
